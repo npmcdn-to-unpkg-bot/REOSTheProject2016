@@ -18,20 +18,20 @@
 
 ### 0.1 Fejlesztéshez szükséges szoftverek
 
-	1. Csomag kezelő rendszer: NodeJS - (https://nodejs.org/en/)
+	1. Csomag kezelő rendszer: NodeJS - (https://nodejs.org/en/) és Composer - (https://getcomposer.org/)
 	2. Verzió kezelő rendszer: Git - (https://git-scm.com/downloads)
 	3. Compile (SASS) kezelő rendszer: Ruby - (http://rubyinstaller.org/)
 	4. Web-szerver: XAMPP (Apache, MySQL) - (https://www.apachefriends.org/)
 	5. Fejlesztő környezet: Sublime Text 3 - (https://www.sublimetext.com/) / Notepad++ - (https://notepad-plus-plus.org/)
 	6. Fájl kezelő rendszer: Total Commander - (http://www.totalcommander.hu/)
 
-### 0.1 Fejlesztéshez választott programozás nyelvek
+### 0.2 Fejlesztéshez választott programozás nyelvek
 
 	1. Front-end: JavaScript / jQuery (veziószám) / AngularJS 2 (veziószám)
 	2. Back-end: PHP (veziószám) / Laravel 5 (veziószám)
 	3. Database: MySQL (veziószám)
 
-###  0.1 Verziózás meghatározása és inicializálása
+###  0.3 Verziózás meghatározása és inicializálása
 
 	! Hogy történik a verziózás?
 		# Effector
@@ -40,4 +40,15 @@
 	0.2 Projekt mappa létrehozása: mkdir REOSTheProject2016
 	1. 	Github felhasználó létrehozása - (https://github.com)
 	2. 	Git tároló (repository) létrehozása: $cd REOSTheProject2016, $ git init
-	3.	README.md fájl létrehozása és hozzáadása a tárolóhoz: git add .
+	3.	README.md fájl létrehozása és hozzáadása a tárolóhoz: $ git add .
+	4.	Tárolt adatok "mentése": $ git commit -m 'Initialize REOS The Project'
+	5.	(nemtommiezaművelet):  $ git remote add origin https://github.com/Revajzz/REOSTheProject2016.git
+	6. 	(eztse): $ git push -u origin master
+
+## 0
+
+### Laravel 5 telepítése és "Hello World"
+	
+	1. https://laravel.com/docs/5.2
+
+## 
