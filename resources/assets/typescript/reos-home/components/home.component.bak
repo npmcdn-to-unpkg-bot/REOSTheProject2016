@@ -1,0 +1,115 @@
+import {Component} from 'angular2/core';
+import {ROUTER_DIRECTIVES} from 'angular2/router';
+import { CAROUSEL_DIRECTIVES, Collapse } from 'ng2-bootstrap/ng2-bootstrap';
+
+@Component({
+  template:  
+  `
+  	<div class="reos-page" id="startScreen">
+        <div class="container">
+            <span style="color:#fff;background: #1171A3">REOS</span> OKTATÁS
+             <i style="color: #FF8503">beta</i>
+            <div style="font-size:40px;margin-top: 15px;">
+                #php &nbsp;
+                #html &nbsp;
+                #css3 &nbsp;
+                #sql &nbsp;
+                #csharp &nbsp;
+                #java &nbsp;
+                #js
+            </div>
+            <div style="position:absolute;top:250px;left:45%">
+            	<a href="#presentationAppScreen"><i class="fa fa-arrow-circle-down fa-2x"></i></a>
+            </div>
+        </div>
+  	</div>
+
+    <div class="reos-page" id="presentationAppScreen">
+        <carousel [interval]="myInterval" [noWrap]="noWrapSlides">
+          <slide *ngFor="#slidez of slides; #index=index"
+                 [active]="slidez.active">
+                 <div style="background:#1C9CA9;
+                             width:100%;
+                             height: 100%;">
+                             asdasdsa</div>
+            </slide>
+          </carousel>
+    </div>
+
+    <div class="reos-page" id="helpScreen">
+      <div>
+        <h2 style="font-size: 72px;padding: 36px;text-align: center;">
+          Ha elakadtál, segítünk
+        </h2>
+
+        <button type="button" class="btn btn-primary"
+        (click)="isCollapsed = !isCollapsed">Toggle collapse
+        </button>
+        <hr>
+        <div [collapse]="isCollapsed" class="card card-block card-header">
+          <div class="well well-lg">Some content</div>
+        </div>
+      </div>
+        <div style="position:absolute;bottom:30px;left: 40%;">
+          <a href="#authScreen" style="color:#333;font-size:30px;">Belépés, regisztráció&nbsp;&nbsp; <i class="fa fa-arrow-circle-down"></i></a>
+        </div>
+    </div>
+
+    <div class="reos-page" id="authScreen">
+      <div>
+        <h2 style="font-size: 72px;padding: 36px;text-align: center;">
+          Lépj be vagy regisztrálj
+        </h2>
+      </div>
+        <div style="position:absolute;bottom:30px;left: 40%;">
+          <a href="#aboutScreen" style="color:#333;font-size:30px;">Ismerd meg a csapatot&nbsp;&nbsp; <i class="fa fa-arrow-circle-down"></i></a>
+        </div>
+    </div>
+
+    <div class="reos-page" id="aboutScreen">
+      <div>
+        <h2 style="font-size: 72px;padding: 36px;text-align: center;">
+          Akik mind ezt lehetővé tették
+        </h2>
+      </div>
+        <div style="position:absolute;bottom:30px;left: 40%;">
+          <a href="#contactScreen" style="color:#333;font-size:30px;">Kapcsolat&nbsp;&nbsp; <i class="fa fa-arrow-circle-down"></i></a>
+        </div>
+    </div>
+
+    <div class="reos-page" id="contactScreen">
+      <div>
+        <h2 style="font-size: 72px;padding: 36px;text-align: center;">
+          Kapcsolat
+        </h2>    
+      <div style="position:absolute;top:250px;left:45%;font-size: 72px;">
+        <a href="#presentationAppScreen"><i class="fa fa-arrow-circle-up fa-2x"></i></a>
+      </div>
+    </div>
+
+  `,
+  directives: [ROUTER_DIRECTIVES, CAROUSEL_DIRECTIVES, Collapse],
+})
+
+export class HomeComponent {
+  public myInterval:number = 5000;
+  public noWrapSlides:boolean = false;
+  public slides:Array<any> = [];
+
+  public isCollapsed:boolean = false;
+
+  public constructor() {
+    for (let i = 0; i < 1; i++) {
+      this.addSlide();
+    }
+  }
+
+  public addSlide():void {
+    let newWidth = 600 + this.slides.length + 1;
+    this.slides.push({
+      image: `//placekitten.com/${newWidth}/300`,
+      text: `${['More', 'Extra', 'Lots of', 'Surplus'][this.slides.length % 4]}
+      ${['Cats', 'Kittys', 'Felines', 'Cutes'][this.slides.length % 4]}`
+    });
+  }
+}

@@ -3,7 +3,8 @@
 import {bootstrap} from 'angular2/platform/browser';
 import 
 	{
-		ROUTER_PROVIDERS,RouteConfig, 
+		ROUTER_PROVIDERS,
+		RouteConfig, 
 		ROUTER_DIRECTIVES, 
 		APP_BASE_HREF,
 		LocationStrategy,
@@ -12,6 +13,8 @@ import
 	} from 'angular2/router';
 
 import {AppComponent} from './app.component';
+import {enableProdMode} from 'angular2/core';
+enableProdMode();
 
 bootstrap(AppComponent, [
   ROUTER_PROVIDERS

@@ -3,8 +3,9 @@
     <head>
         <title>Laravel</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet" type="text/css">
         <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
         <link href="css/app.css" rel="stylesheet" type="text/css">
 
         <!-- 1. Load libraries -->

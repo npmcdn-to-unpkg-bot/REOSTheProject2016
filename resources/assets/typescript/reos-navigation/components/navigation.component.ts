@@ -5,37 +5,97 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
 	selector: 'reos-navigation',
 	template:  
 	`
-		<nav class="navbar navbar-default reos-navigation">
-			<div class="container-fluid">
+<reos-pages>
+	<reos-page>
+		<div class="reos-navigation">
 
-			    <!-- Brand and toggle get grouped for better mobile display -->
-			    <div class="navbar-header">
-      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#reosNav" aria-expanded="false">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-			    	</button>
-      				<a class="navbar-brand" href="#">Brand</a>
-    			</div>
+			<div class="reos-profile">
 
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="reosNav">
-	      			<ul class="nav navbar-nav pull-right">
-		                <li><a [routerLink]="['Root']">Home</a></li>
-		                <li><a [routerLink]="['About']">About</a></li>
-		                <li><a [routerLink]="['Contact']">Contact</a></li>
-		                <li><a [routerLink]="['AuthLogin']">Login</a></li>
-		                <li><a [routerLink]="['AuthRegister']">Register</a></li>
-		                <li><a [routerLink]="['AuthResetPassword']">Reset password</a></li>
-	      			</ul>
-    			</div><!-- /.navbar-collapse -->
-  			</div><!-- /.container-fluid -->
-		</nav>
+			</div>
+
+			<div class="reos-nav">
+
+				<a [routerLink]="['Contact']" class="reos-nav-item" style="background: #E2E2E2;border:0;width: 100%">
+					<div style="background: #4285F4;color: #fff;width:80%;margin: 0 auto;padding: 10px 0;border-radius: 20px;">
+						<span>
+							<i class="fa fa-comment"></i>
+						</span>&nbsp;&nbsp;
+						<span>LENNE EGY KÉRDÉSEM!</span>
+					</div>
+				</a>
+
+				<a [routerLink]="['UserManager']" class="reos-nav-item" style="background: #34A853;color: #fff;">
+					<span class="reos-nav-icon">
+						<i class="fa fa-users fa-2x"></i>
+					</span>
+					<span class="reos-nav-title">FELHASZNÁLÓK KEZELÉSE</span>
+				</a>
+
+				<a [routerLink]="['CourseManager']" class="reos-nav-item" style="background: #34A853;color: #fff;">
+					<span class="reos-nav-icon">
+						<i class="fa fa-graduation-cap fa-2x"></i>
+					</span>
+					<span class="reos-nav-title">KURZUSOK KEZELÉSE</span>
+				</a>
+
+				<a [routerLink]="['TestManager']" class="reos-nav-item" style="background: #34A853;color: #fff;">
+					<span class="reos-nav-icon">
+						<i class="fa fa-pencil fa-2x"></i>
+					</span>
+					<span class="reos-nav-title">VIZSGÁK KEZELÉSE</span>
+				</a>
+
+				<a [routerLink]="['Root']" class="reos-nav-item" style="background: #34A853;color: #fff;">
+					<span class="reos-nav-icon">
+						<i class="fa fa-desktop fa-2x"></i>
+					</span>
+					<span class="reos-nav-title">MONITOR</span>
+				</a>
+
+				<a [routerLink]="['Root']" class="reos-nav-item">
+					<span class="reos-nav-icon">
+						<i class="fa fa-dashboard fa-2x"></i>
+					</span>
+					<span class="reos-nav-title">DASHBOARD</span>
+				</a>
+
+				<a [routerLink]="['MyProfile']" class="reos-nav-item">
+					<span class="reos-nav-icon">
+						<i class="fa fa-user fa-2x"></i>
+					</span>
+					<span class="reos-nav-title">PROFILOM</span>
+				</a>
+
+				<a [routerLink]="['MyCourse']" class="reos-nav-item">
+					<span class="reos-nav-icon">
+						<i class="fa fa-graduation-cap fa-2x"></i>
+					</span>
+					<span class="reos-nav-title">KURZUSAIM</span>
+				</a>
+				<a [routerLink]="['MyTest']" class="reos-nav-item">
+					<span class="reos-nav-icon">
+						<i class="fa fa-pencil fa-2x"></i>
+					</span>
+					<span class="reos-nav-title">VIZSGÁIM</span>
+				</a>
+				<div class="reos-nav-item">
+					<span class="reos-nav-icon">
+						<i class="fa fa-line-chart fa-2x"></i>
+					</span>
+					<span class="reos-nav-title">STATISZTIKÁK</span>
+				</div>
+				<div class="reos-nav-item">
+					<span class="reos-nav-icon">
+						<i class="fa fa-signal fa-2x"></i>
+					</span>
+					<span class="reos-nav-title">RANGLÉTRA</span>
+				</div>
+			</div>
+		</div>
+	</reos-page>
+</reos-pages>
 	`,
-    directives: [
-                    ROUTER_DIRECTIVES
-                ],
+    directives: [ROUTER_DIRECTIVES],
 })
 
 export class NavigationComponent { }

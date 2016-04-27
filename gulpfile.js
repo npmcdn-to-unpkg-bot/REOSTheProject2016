@@ -1,5 +1,6 @@
+var gulp = require('gulp');
+var del = require('del');
 var elixir = require('laravel-elixir');
- 
 var elixirTypscript = require('elixir-typescript');
 
 /*
@@ -15,7 +16,6 @@ var elixirTypscript = require('elixir-typescript');
  
 elixir(function(mix) {
     mix.sass('app.scss');
-    mix.browserSync({proxy: 'localhost:8000'});
  
 /*    mix.copy('node_modules/angular2', 'public/angular2');
     mix.copy('node_modules/rxjs', 'public/rxjs');
@@ -25,7 +25,12 @@ elixir(function(mix) {
     mix.copy('node_modules/zone.js', 'public/zone.js');
     mix.copy('node_modules/moment', 'public/moment');
     mix.copy('node_modules/bootstrap', 'public/bootstrap');
-    mix.copy('node_modules/ng2-bootstrap', 'public/ng2-bootstrap');*/
+    mix.copy('node_modules/ng2-bootstrap', 'public/ng2-bootstrap');
+    mix.copy('node_modules/font-awesome', 'public/font-awesome');*/
+    
+    gulp.task('clean', function () {
+      return del('dist/**/*');
+    });
 
     mix.typescript('app.js','public/','/**/*.ts',{
                   "target": "ES5",

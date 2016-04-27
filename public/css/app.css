@@ -1,0 +1,193 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato'; }
+
+.reos-navigation {
+  width: 300px;
+  height: 100%;
+  background: #e2e2e2;
+  z-index: 10;
+  position: absolute; }
+  .reos-navigation .reos-nav {
+    position: absolute;
+    bottom: 0;
+    width: 300px; }
+    .reos-navigation .reos-nav .reos-nav-item {
+      font-size: 15px;
+      padding: 15px 0;
+      width: 50%;
+      background: #fff;
+      text-align: center;
+      border-top: 1px solid #aaa;
+      border-right: 1px solid #aaa;
+      color: #555;
+      float: left;
+      text-decoration: none; }
+      .reos-navigation .reos-nav .reos-nav-item .reos-nav-icon {
+        font-size: 21px;
+        padding: 5px 0; }
+      .reos-navigation .reos-nav .reos-nav-item .reos-nav-title {
+        display: block;
+        padding: 8px 0 0; }
+    .reos-navigation .reos-nav .reos-nav-item:hover {
+      background: #4285F4; }
+      .reos-navigation .reos-nav .reos-nav-item:hover .reos-nav-icon,
+      .reos-navigation .reos-nav .reos-nav-item:hover .reos-nav-title {
+        color: #fff; }
+
+.reos-pages {
+  background: #ECECEC;
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+  .reos-pages .reos-page {
+    height: 100%; }
+
+/*
+@media (max-width: 480px) {
+    .navbar li a{
+    font-size:14px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .navbar li a{
+    font-size:20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .navbar li a{
+    font-size:26px;
+    }
+}
+
+@media (min-width: 980px) {
+  .navbar li a{
+  	font-size:22px;
+  }
+}
+
+.reos-navigation
+{
+
+	.navbar-nav > li > a
+	{
+	    color: #333;
+	    font-weight: bold;
+	    letter-spacing: 1px;
+	}
+
+	.dropdown-menu > li > a 
+	{
+		font-weight: bold;
+	}
+}
+
+.reos-page
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #FAFAFA;
+
+	.carousel
+	{
+		height: 100%;
+
+		.carousel-inner
+		{
+			height: 100%;
+		}
+
+		slide
+		{
+			height: 100%;
+
+			.item
+			{
+				height: 100%;			
+			}
+		}
+	}
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+#startScreen
+{
+
+	.container {
+	    text-align: center;
+	    position:absolute;
+	    width: 100%;;
+	    font-size: 90px;
+	    top:230px;
+
+	    span
+	    {
+		    color: #fff;
+		    background: #1171A3;
+		    padding: 20px;
+		    border-radius: 20px;
+	    }
+	}
+}
+
+#presentationAppScreen
+{
+	background: #EAEAEA;
+
+}
+
+#helpScreen
+{
+	background: #FAFAFA;
+
+}
+
+#authScreen
+{
+	background: #EAEAEA;
+
+}
+
+#aboutScreen
+{
+	background: #FAFAFA;
+}
+
+#contactScreen
+{
+	background: #EAEAEA;
+
+}
+*/
+
+/*# sourceMappingURL=app.css.map */

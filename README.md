@@ -1,3 +1,14 @@
+Megoldandó problémák:
+	- Angular 2-vel kompatibilis scrolling
+	- Crausel-hez több effect hozzáadása
+		- működése jó!
+		- effect nem megy
+		- vertical: http://www.bootply.com/63148
+	- Navbar akkor látszik, ha NEM az startScreen-en állunk
+	- Navbar-ban a menük active helyzetének beállítása
+	- elem effectek: animate.css
+	- elem hover effectek: hover.css
+
 ### 0. Alkalmazás meghatározása
 
 	! Mit szeretnék megvalósítani?
